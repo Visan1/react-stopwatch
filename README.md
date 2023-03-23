@@ -1,6 +1,6 @@
 # Introduction
 
-A simple easy to use stopwatch created using React. 
+A simple, easy to use stopwatch created using React. 
 
 ## Available Scripts
 
