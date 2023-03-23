@@ -1,3 +1,7 @@
+# Introduction
+
+A simple easy to use stopwatch created using React. 
+
 ## Available Scripts
 
 In the project directory, you can run:
