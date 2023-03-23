@@ -1,11 +1,28 @@
 import React from 'react';
 
-function btnComponent() {
+function BtnComponent(props) {
   return (
     <div>
-      <h1>Button</h1>
+     {(props.status === 0) ? 
+        <button className="stopwatch-btn stopwatch-btn-gre" onClick={props.start}>Start</button> : ""
+     }
+     
+     {(props.status === 1) ? 
+      <div>
+        <button className="stopwatch-btn stopwatch-btn-red" onClick={props.stop}>Stop</button> 
+        <button className="stopwatch-btn stopwatch-btn-yel" onClick={props.restart}>Reset</button> 
+      </div> : ""
+     }
+
+     {(props.status === 2) ? 
+      <div>
+        <button className="stopwatch-btn stopwatch-btn-gre" onClick={props.resume}>Resume</button> 
+        <button className="stopwatch-btn stopwatch-btn-yel" onClick={props.restart}>Reset</button> 
+      </div> : ""
+     }
+
     </div>
   );
 }
 
-export default btnComponent
+export default BtnComponent
